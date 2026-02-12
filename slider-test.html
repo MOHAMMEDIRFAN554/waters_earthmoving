@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Test</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test-container">
+        <h1>Intro Slider Test</h1>
+
+        <div class="split-section">
+            <div class="split-text">
+                <h2>Welcome to Waters Earthmoving</h2>
+                <p>This is a test of the intro slider functionality.</p>
+            </div>
+            <div class="split-image">
+                <!-- Image Slider -->
+                <div class="intro-slider-container">
+                    <div class="intro-slider">
+                        <div class="intro-slide active">
+                            <img src="assets/images/site-work-2.png" alt="Waters Earthmoving Site Work">
+                        </div>
+                        <div class="intro-slide">
+                            <img src="assets/images/site-work-1.png" alt="Excavation Work">
+                        </div>
+                        <div class="intro-slide">
+                            <img src="assets/images/site-work-3.5.png" alt="Earthmoving Project">
+                        </div>
+                        <div class="intro-slide">
+                            <img src="assets/images/treepick/WhatsApp Image 2026-01-29 at 10.21.43 AM.jpeg"
+                                alt="Tree Removal">
+                        </div>
+                        <div class="intro-slide">
+                            <img src="assets/images/treepick/WhatsApp Image 2026-01-29 at 10.21.47 AM.jpeg"
+                                alt="Tree Pick Work">
+                        </div>
+                        <div class="intro-slide">
+                            <img src="assets/images/treepick/WhatsApp Image 2026-02-02 at 5.22.38 PM.jpeg"
+                                alt="Tree Removal Service">
+                        </div>
+                    </div>
+                    <!-- Slider Navigation -->
+                    <button class="intro-slider-btn intro-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="intro-slider-btn intro-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <!-- Slider Dots -->
+                    <div class="intro-slider-dots"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Debug console
+        console.log('Slider test loaded');
+        console.log('Intro slides found:', document.querySelectorAll('.intro-slide').length);
+        console.log('Active slide:', document.querySelector('.intro-slide.active'));
+        console.log('Slider container:', document.querySelector('.intro-slider-container'));
+    </script>
+</body>
+
+</html>
